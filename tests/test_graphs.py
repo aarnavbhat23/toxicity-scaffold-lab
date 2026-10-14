@@ -23,6 +23,13 @@ class GraphInvariants(unittest.TestCase):
         masked_bce(logits,torch.tensor([[1.,float('nan')]])).backward()
         self.assertEqual(logits.grad[0,1].item(),0.)
 
+    def test_atom_order_is_invisible(self):
+        torch.manual_seed(8);model=ToxicityNetwork().eval()
+        with torch.no_grad():
+            forward=model(*batch_graphs([graph('CCO')]))
+            reversed_order=model(*batch_graphs([graph('OCC')]))
+        torch.testing.assert_close(forward,reversed_order)
+
     def test_related_ring_scaffolds(self):
         self.assertEqual(scaffold('Cc1ccccc1'),scaffold('Oc1ccccc1'))
         self.assertEqual(scaffold('CCO'),'[ACYCLIC]')
