@@ -1,5 +1,7 @@
 # Toxicity Scaffold Lab
 
+[![Reproduction checks](https://github.com/aarnavbhat23/toxicity-scaffold-lab/actions/workflows/graph-and-results.yml/badge.svg)](https://github.com/aarnavbhat23/toxicity-scaffold-lab/actions/workflows/graph-and-results.yml)
+
 A bond-aware molecular graph model, a fingerprint baseline, and a scaffold-level uncertainty experiment on twelve Tox21 assays.
 
 The first release trains two message-passing models on **7,822 canonical molecules** derived from 7,831 upstream rows. Whole Murcko scaffolds are assigned to training, validation, calibration and testing. Missing assay labels never become inactive examples.
