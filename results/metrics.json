@@ -1,0 +1,590 @@
+{
+  "source": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/tox21.csv.gz",
+  "sha256": "45d09792492ce049039dd24aa27b07fc79ce20c573187d4d90bcd178c0c0d360",
+  "source_rows": 7831,
+  "unique_molecules": 7822,
+  "scaffolds": 2324,
+  "excluded_rows": 9,
+  "conflicting_duplicate_labels_masked": 0,
+  "split_rows": {
+    "calibration": 566,
+    "test": 476,
+    "train": 6336,
+    "validation": 444
+  },
+  "seeds": [
+    912,
+    913
+  ],
+  "selected_epochs": [
+    25,
+    14
+  ],
+  "parameters_per_graph_model": 94540,
+  "device": "cpu",
+  "elapsed_seconds": 29.64616107940674,
+  "models": {
+    "morgan_logistic": {
+      "macro_auroc": 0.7547672779020629,
+      "assays": {
+        "NR-AR": {
+          "test_labels": 445,
+          "positive_fraction": 0.058426966292134834,
+          "auroc": 0.6299798053974663,
+          "average_precision": 0.4511050328339895,
+          "brier": 0.03953013941645622,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.046633340418338776,
+              "row_coverage": 0.8584269662921349,
+              "scaffold_simultaneous_coverage": 0.8153153153153153,
+              "mean_set_size": 0.8898876404494382,
+              "empty_fraction": 0.1101123595505618
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.06110181659460068,
+              "row_coverage": 0.8764044943820225,
+              "scaffold_simultaneous_coverage": 0.8378378378378378,
+              "mean_set_size": 0.9078651685393259,
+              "empty_fraction": 0.09213483146067415
+            }
+          }
+        },
+        "NR-AR-LBD": {
+          "test_labels": 410,
+          "positive_fraction": 0.026829268292682926,
+          "auroc": 0.6921850079744817,
+          "average_precision": 0.561748227686736,
+          "brier": 0.013872181065380573,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.045709218829870224,
+              "row_coverage": 0.926829268292683,
+              "scaffold_simultaneous_coverage": 0.8774509803921569,
+              "mean_set_size": 0.9390243902439024,
+              "empty_fraction": 0.06097560975609756
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.06571024656295776,
+              "row_coverage": 0.9365853658536586,
+              "scaffold_simultaneous_coverage": 0.8921568627450981,
+              "mean_set_size": 0.948780487804878,
+              "empty_fraction": 0.05121951219512195
+            }
+          }
+        },
+        "NR-AhR": {
+          "test_labels": 409,
+          "positive_fraction": 0.1687041564792176,
+          "auroc": 0.8313725490196079,
+          "average_precision": 0.463214199529359,
+          "brier": 0.12113428115844727,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.6306115388870239,
+              "row_coverage": 0.8728606356968215,
+              "scaffold_simultaneous_coverage": 0.8502415458937198,
+              "mean_set_size": 1.0660146699266504,
+              "empty_fraction": 0.0
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.8652464151382446,
+              "row_coverage": 0.9266503667481663,
+              "scaffold_simultaneous_coverage": 0.9082125603864735,
+              "mean_set_size": 1.2322738386308068,
+              "empty_fraction": 0.0
+            }
+          }
+        },
+        "NR-Aromatase": {
+          "test_labels": 352,
+          "positive_fraction": 0.07670454545454546,
+          "auroc": 0.7367521367521367,
+          "average_precision": 0.28931025833845325,
+          "brier": 0.06630998104810715,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.7035160064697266,
+              "row_coverage": 0.9346590909090909,
+              "scaffold_simultaneous_coverage": 0.8907103825136612,
+              "mean_set_size": 1.03125,
+              "empty_fraction": 0.0
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.95118248462677,
+              "row_coverage": 0.9630681818181818,
+              "scaffold_simultaneous_coverage": 0.9344262295081968,
+              "mean_set_size": 1.2301136363636365,
+              "empty_fraction": 0.0
+            }
+          }
+        },
+        "NR-ER": {
+          "test_labels": 365,
+          "positive_fraction": 0.14520547945205478,
+          "auroc": 0.7049467827769715,
+          "average_precision": 0.36450877087608474,
+          "brier": 0.1215125098824501,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.852764368057251,
+              "row_coverage": 0.9178082191780822,
+              "scaffold_simultaneous_coverage": 0.8852459016393442,
+              "mean_set_size": 1.2547945205479452,
+              "empty_fraction": 0.0
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.9711652994155884,
+              "row_coverage": 0.9698630136986301,
+              "scaffold_simultaneous_coverage": 0.9453551912568307,
+              "mean_set_size": 1.5616438356164384,
+              "empty_fraction": 0.0
+            }
+          }
+        },
+        "NR-ER-LBD": {
+          "test_labels": 417,
+          "positive_fraction": 0.045563549160671464,
+          "auroc": 0.7997884157630257,
+          "average_precision": 0.2837612343604612,
+          "brier": 0.042090773582458496,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.3314855992794037,
+              "row_coverage": 0.9424460431654677,
+              "scaffold_simultaneous_coverage": 0.9264705882352942,
+              "mean_set_size": 0.9832134292565947,
+              "empty_fraction": 0.016786570743405275
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.9062648415565491,
+              "row_coverage": 0.9712230215827338,
+              "scaffold_simultaneous_coverage": 0.9509803921568627,
+              "mean_set_size": 1.0935251798561152,
+              "empty_fraction": 0.0
+            }
+          }
+        },
+        "NR-PPAR-gamma": {
+          "test_labels": 391,
+          "positive_fraction": 0.03324808184143223,
+          "auroc": 0.8823768823768824,
+          "average_precision": 0.43535132607876503,
+          "brier": 0.02575766295194626,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.0827619880437851,
+              "row_coverage": 0.9437340153452686,
+              "scaffold_simultaneous_coverage": 0.8974358974358975,
+              "mean_set_size": 0.9616368286445013,
+              "empty_fraction": 0.03836317135549872
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.2211487889289856,
+              "row_coverage": 0.9616368286445013,
+              "scaffold_simultaneous_coverage": 0.9333333333333333,
+              "mean_set_size": 0.9846547314578005,
+              "empty_fraction": 0.015345268542199489
+            }
+          }
+        },
+        "SR-ARE": {
+          "test_labels": 346,
+          "positive_fraction": 0.2398843930635838,
+          "auroc": 0.7463695084520592,
+          "average_precision": 0.5450418437213072,
+          "brier": 0.15606562793254852,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.8550899624824524,
+              "row_coverage": 0.9017341040462428,
+              "scaffold_simultaneous_coverage": 0.84375,
+              "mean_set_size": 1.3554913294797688,
+              "empty_fraction": 0.0
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.973474383354187,
+              "row_coverage": 0.9797687861271677,
+              "scaffold_simultaneous_coverage": 0.9625,
+              "mean_set_size": 1.6734104046242775,
+              "empty_fraction": 0.0
+            }
+          }
+        },
+        "SR-ATAD5": {
+          "test_labels": 430,
+          "positive_fraction": 0.06744186046511629,
+          "auroc": 0.7881589130621721,
+          "average_precision": 0.18593738548537617,
+          "brier": 0.06403352320194244,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.11605098843574524,
+              "row_coverage": 0.858139534883721,
+              "scaffold_simultaneous_coverage": 0.8598130841121495,
+              "mean_set_size": 0.9046511627906977,
+              "empty_fraction": 0.09534883720930233
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.23847389221191406,
+              "row_coverage": 0.9,
+              "scaffold_simultaneous_coverage": 0.897196261682243,
+              "mean_set_size": 0.9604651162790697,
+              "empty_fraction": 0.03953488372093023
+            }
+          }
+        },
+        "SR-HSE": {
+          "test_labels": 382,
+          "positive_fraction": 0.049738219895287955,
+          "auroc": 0.6509351892127011,
+          "average_precision": 0.1955022558357193,
+          "brier": 0.0524732880294323,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.22506773471832275,
+              "row_coverage": 0.8952879581151832,
+              "scaffold_simultaneous_coverage": 0.8146067415730337,
+              "mean_set_size": 0.9345549738219895,
+              "empty_fraction": 0.06544502617801047
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.7797156572341919,
+              "row_coverage": 0.9607329842931938,
+              "scaffold_simultaneous_coverage": 0.9157303370786517,
+              "mean_set_size": 1.0654450261780104,
+              "empty_fraction": 0.0
+            }
+          }
+        },
+        "SR-MMP": {
+          "test_labels": 327,
+          "positive_fraction": 0.2324159021406728,
+          "auroc": 0.8584346823233382,
+          "average_precision": 0.6660632992943136,
+          "brier": 0.12165148556232452,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.8330882787704468,
+              "row_coverage": 0.9296636085626911,
+              "scaffold_simultaneous_coverage": 0.877906976744186,
+              "mean_set_size": 1.253822629969419,
+              "empty_fraction": 0.0
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.9389389753341675,
+              "row_coverage": 0.963302752293578,
+              "scaffold_simultaneous_coverage": 0.9418604651162791,
+              "mean_set_size": 1.4311926605504588,
+              "empty_fraction": 0.0
+            }
+          }
+        },
+        "SR-p53": {
+          "test_labels": 405,
+          "positive_fraction": 0.08148148148148149,
+          "auroc": 0.7359074617139133,
+          "average_precision": 0.26490668706219256,
+          "brier": 0.07686860114336014,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.496599018573761,
+              "row_coverage": 0.8987654320987655,
+              "scaffold_simultaneous_coverage": 0.8366336633663366,
+              "mean_set_size": 0.9950617283950617,
+              "empty_fraction": 0.0049382716049382715
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.8074224591255188,
+              "row_coverage": 0.9432098765432099,
+              "scaffold_simultaneous_coverage": 0.8960396039603961,
+              "mean_set_size": 1.0864197530864197,
+              "empty_fraction": 0.0
+            }
+          }
+        }
+      }
+    },
+    "message_passing_ensemble": {
+      "macro_auroc": 0.7332188535915983,
+      "assays": {
+        "NR-AR": {
+          "test_labels": 445,
+          "positive_fraction": 0.058426966292134834,
+          "auroc": 0.7472002937396732,
+          "average_precision": 0.23676559216074738,
+          "brier": 0.04883032664656639,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.24430616199970245,
+              "row_coverage": 0.9168539325842696,
+              "scaffold_simultaneous_coverage": 0.9009009009009009,
+              "mean_set_size": 0.9573033707865168,
+              "empty_fraction": 0.04269662921348315
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.12776648998260498,
+              "row_coverage": 0.8943820224719101,
+              "scaffold_simultaneous_coverage": 0.8738738738738738,
+              "mean_set_size": 0.9325842696629213,
+              "empty_fraction": 0.06741573033707865
+            }
+          }
+        },
+        "NR-AR-LBD": {
+          "test_labels": 410,
+          "positive_fraction": 0.026829268292682926,
+          "auroc": 0.7145135566188198,
+          "average_precision": 0.21867264725012092,
+          "brier": 0.02350829355418682,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.5319703817367554,
+              "row_coverage": 0.973170731707317,
+              "scaffold_simultaneous_coverage": 0.9607843137254902,
+              "mean_set_size": 1.0121951219512195,
+              "empty_fraction": 0.0
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.15766149759292603,
+              "row_coverage": 0.9292682926829269,
+              "scaffold_simultaneous_coverage": 0.9117647058823529,
+              "mean_set_size": 0.9414634146341463,
+              "empty_fraction": 0.05853658536585366
+            }
+          }
+        },
+        "NR-AhR": {
+          "test_labels": 409,
+          "positive_fraction": 0.1687041564792176,
+          "auroc": 0.8472719522591645,
+          "average_precision": 0.538699019764076,
+          "brier": 0.1069149374961853,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.5714893341064453,
+              "row_coverage": 0.8899755501222494,
+              "scaffold_simultaneous_coverage": 0.8599033816425121,
+              "mean_set_size": 1.0880195599022005,
+              "empty_fraction": 0.0
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.7153414487838745,
+              "row_coverage": 0.9193154034229829,
+              "scaffold_simultaneous_coverage": 0.8840579710144928,
+              "mean_set_size": 1.1687041564792175,
+              "empty_fraction": 0.0
+            }
+          }
+        },
+        "NR-Aromatase": {
+          "test_labels": 352,
+          "positive_fraction": 0.07670454545454546,
+          "auroc": 0.7098575498575499,
+          "average_precision": 0.15986611109303242,
+          "brier": 0.06925272196531296,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.9188048839569092,
+              "row_coverage": 0.9460227272727273,
+              "scaffold_simultaneous_coverage": 0.9016393442622951,
+              "mean_set_size": 1.1732954545454546,
+              "empty_fraction": 0.0
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.9415357112884521,
+              "row_coverage": 0.9517045454545454,
+              "scaffold_simultaneous_coverage": 0.912568306010929,
+              "mean_set_size": 1.3125,
+              "empty_fraction": 0.0
+            }
+          }
+        },
+        "NR-ER": {
+          "test_labels": 365,
+          "positive_fraction": 0.14520547945205478,
+          "auroc": 0.7594339622641509,
+          "average_precision": 0.3669102358754768,
+          "brier": 0.1110382005572319,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.8018636703491211,
+              "row_coverage": 0.9315068493150684,
+              "scaffold_simultaneous_coverage": 0.8907103825136612,
+              "mean_set_size": 1.210958904109589,
+              "empty_fraction": 0.0
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.8527102470397949,
+              "row_coverage": 0.9616438356164384,
+              "scaffold_simultaneous_coverage": 0.9289617486338798,
+              "mean_set_size": 1.378082191780822,
+              "empty_fraction": 0.0
+            }
+          }
+        },
+        "NR-ER-LBD": {
+          "test_labels": 417,
+          "positive_fraction": 0.045563549160671464,
+          "auroc": 0.8065326633165829,
+          "average_precision": 0.1880879913897869,
+          "brier": 0.04059005156159401,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.6989942789077759,
+              "row_coverage": 0.9592326139088729,
+              "scaffold_simultaneous_coverage": 0.9558823529411765,
+              "mean_set_size": 1.0119904076738608,
+              "empty_fraction": 0.0
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.8421370983123779,
+              "row_coverage": 0.9712230215827338,
+              "scaffold_simultaneous_coverage": 0.9656862745098039,
+              "mean_set_size": 1.0959232613908874,
+              "empty_fraction": 0.0
+            }
+          }
+        },
+        "NR-PPAR-gamma": {
+          "test_labels": 391,
+          "positive_fraction": 0.03324808184143223,
+          "auroc": 0.5433455433455434,
+          "average_precision": 0.03685534140236234,
+          "brier": 0.03277791291475296,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.06483709067106247,
+              "row_coverage": 0.8312020460358056,
+              "scaffold_simultaneous_coverage": 0.8307692307692308,
+              "mean_set_size": 0.8618925831202046,
+              "empty_fraction": 0.13810741687979539
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.07790690660476685,
+              "row_coverage": 0.8925831202046036,
+              "scaffold_simultaneous_coverage": 0.8871794871794871,
+              "mean_set_size": 0.9258312020460358,
+              "empty_fraction": 0.0741687979539642
+            }
+          }
+        },
+        "SR-ARE": {
+          "test_labels": 346,
+          "positive_fraction": 0.2398843930635838,
+          "auroc": 0.7435292500801685,
+          "average_precision": 0.5399015098323499,
+          "brier": 0.16261616349220276,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.8042155504226685,
+              "row_coverage": 0.8930635838150289,
+              "scaffold_simultaneous_coverage": 0.81875,
+              "mean_set_size": 1.3352601156069364,
+              "empty_fraction": 0.0
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.8408759832382202,
+              "row_coverage": 0.9219653179190751,
+              "scaffold_simultaneous_coverage": 0.8625,
+              "mean_set_size": 1.4508670520231215,
+              "empty_fraction": 0.0
+            }
+          }
+        },
+        "SR-ATAD5": {
+          "test_labels": 430,
+          "positive_fraction": 0.06744186046511629,
+          "auroc": 0.7905666867314471,
+          "average_precision": 0.2757109065656795,
+          "brier": 0.05943246930837631,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.09762594103813171,
+              "row_coverage": 0.8790697674418605,
+              "scaffold_simultaneous_coverage": 0.8925233644859814,
+              "mean_set_size": 0.9209302325581395,
+              "empty_fraction": 0.07906976744186046
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.1327168047428131,
+              "row_coverage": 0.9046511627906977,
+              "scaffold_simultaneous_coverage": 0.9299065420560748,
+              "mean_set_size": 0.9558139534883721,
+              "empty_fraction": 0.044186046511627906
+            }
+          }
+        },
+        "SR-HSE": {
+          "test_labels": 382,
+          "positive_fraction": 0.049738219895287955,
+          "auroc": 0.6013484123531969,
+          "average_precision": 0.07641910224274061,
+          "brier": 0.048328742384910583,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.1454770863056183,
+              "row_coverage": 0.8717277486910995,
+              "scaffold_simultaneous_coverage": 0.8539325842696629,
+              "mean_set_size": 0.9109947643979057,
+              "empty_fraction": 0.08900523560209424
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.8882234692573547,
+              "row_coverage": 0.9659685863874345,
+              "scaffold_simultaneous_coverage": 0.9269662921348315,
+              "mean_set_size": 1.1884816753926701,
+              "empty_fraction": 0.0
+            }
+          }
+        },
+        "SR-MMP": {
+          "test_labels": 327,
+          "positive_fraction": 0.2324159021406728,
+          "auroc": 0.84595827217446,
+          "average_precision": 0.6872716439081407,
+          "brier": 0.13151538372039795,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.7718630433082581,
+              "row_coverage": 0.9204892966360856,
+              "scaffold_simultaneous_coverage": 0.877906976744186,
+              "mean_set_size": 1.2813455657492354,
+              "empty_fraction": 0.0
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.836231529712677,
+              "row_coverage": 0.944954128440367,
+              "scaffold_simultaneous_coverage": 0.9127906976744186,
+              "mean_set_size": 1.385321100917431,
+              "empty_fraction": 0.0
+            }
+          }
+        },
+        "SR-p53": {
+          "test_labels": 405,
+          "positive_fraction": 0.08148148148148149,
+          "auroc": 0.6890681003584229,
+          "average_precision": 0.14145844177180436,
+          "brier": 0.07316871732473373,
+          "sets": {
+            "row_calibration": {
+              "quantile": 0.7981143593788147,
+              "row_coverage": 0.9209876543209876,
+              "scaffold_simultaneous_coverage": 0.8663366336633663,
+              "mean_set_size": 1.037037037037037,
+              "empty_fraction": 0.0
+            },
+            "scaffold_max_calibration": {
+              "quantile": 0.8993242979049683,
+              "row_coverage": 0.9432098765432099,
+              "scaffold_simultaneous_coverage": 0.8960396039603961,
+              "mean_set_size": 1.2123456790123457,
+              "empty_fraction": 0.0
+            }
+          }
+        }
+      }
+    }
+  }
+}
